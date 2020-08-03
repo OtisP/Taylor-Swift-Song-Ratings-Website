@@ -1,1 +1,5 @@
 Day 1;08/02/20
+IDEA: The goal will be to make a website that will comprehensively rank all Taylor Swift songs, by using some sort of ELO ranking system, and deciding between two
+
+I've constructed a database of all Taylor Swift songs, and their album. It required a lot of manual input for the individual songs, but I figured that would be easiest. A little bit of Regex made it a lot less work.
+I haven't yet taken databases (next semester!) but with some help from W3 tutorials I was able to do some very simple sqlite3 commands.

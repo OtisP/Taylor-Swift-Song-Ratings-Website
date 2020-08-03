@@ -13,6 +13,7 @@ function getSongs(artist) {
   xhttp.onreadystatechange = function() {
     if(this.readyState == 4 && this.status == 200) {
       var songs = JSON.parse(this.responseText);
+      console.log(songs)
 
       // reset the checkboxes
       var radios = document.getElementsByName('album_picked');
@@ -36,8 +37,12 @@ function getSongs(artist) {
       // use the album name to draw the image
       var album_name_one = songs[0][2];
       var album_name_two = songs[1][2];
-      album_name_one = album_name_one.toLowerCase().replace(" ", "_");
-      album_name_two = album_name_two.toLowerCase().replace(" ", "_");
+      album_name_one = decodeURI(album_name_one).toLowerCase().split(" ").join("_");
+
+      album_name_two = decodeURI(album_name_two).toLowerCase().split(" ").join("_");
+      console.log(album_name_one);
+      console.log(album_name_two);
+
       album_one_source = "/static/images/" + artist + "/" + album_name_one + ".png";
       album_two_source = "/static/images/" + artist + "/" + album_name_two + ".png";
       document.getElementById('album_one').src = album_one_source;
@@ -65,7 +70,10 @@ function getSongs(artist) {
 }
 window.onload = getSongs("swift");
 
-function buttonClicked(artist) {
+function buttonClicked() {
+  var artist_s = document.getElementById("artist_select");
+  var artist = artist_s.options[artist_s.selectedIndex].value;
+
   var radios = document.getElementsByName('album_picked');
 
   var winner = -1
@@ -142,7 +150,7 @@ for (i = 0; i < l; i++) {
             s.selectedIndex = i;
             h.innerHTML = this.innerHTML;
             y = this.parentNode.getElementsByClassName("same-as-selected");
-            
+
             // call getSongs on active artist
             var artist_s = document.getElementById("artist_select");
             var artist = artist_s.options[artist_s.selectedIndex].value;

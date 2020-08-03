@@ -17,3 +17,9 @@ It required a decent amount of manual input to get all of the Spotify widgets in
 Added mouseover-text telling you current ELO of songs. Currently working on making the code more versatile for different artists.
 
 Made the code FAR more general and it will now be much easier to do a different artist. The hard part will be writing a script to get the song lists and album covers. Depending on the artist, I could maybe just manually pull the images if that's to hard, but hopefully not.
+
+I'm now trying to implement a script to get artists info from Spotify. I think using the spotipy module is the best way to do this, after a little research.
+
+I was able to make a script to easily grab the names of all the songs of an artist. One issue that I had was, with Kanye West, a bunch of his music was re-released as the live version/cover/or just a straight up copy. There's work to be done on minimizing duplicate songs, but for now I'll just go through them manually and take them out.
+
+Getting the URL to the image isn't actually that hard. For now I'm going to stick with downloading the images and saving them locally though.

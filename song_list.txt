@@ -1,129 +1,133 @@
-Tim McGraw;Taylor Swift
-Picture to Burn;Taylor Swift
-Teardrops on My Guitar;Taylor Swift
-A Place in This World;Taylor Swift
-Cold as You;Taylor Swift
-The Outside;Taylor Swift
-Tied Together with a Smile;Taylor Swift
-Stay Beautiful;Taylor Swift
-Shouldve Said No;Taylor Swift
-Marys Song (Oh My My My);Taylor Swift
-Our Song;Taylor Swift
-Jump Then Fall;Fearless
-Untouchable;Fearless
-Come in with the Rain;Fearless
-SuperStar;Fearless
-The Other Side of the Door;Fearless
-Fearless;Fearless
-Fifteen;Fearless
-Love Story;Fearless
-Hey Stephen;Fearless
-White Horse;Fearless
-You Belong with Me;Fearless
-Breathe;Fearless
-Tell Me Why;Fearless
-Youre Not Sorry;Fearless
-The Way I Loved You;Fearless
-Forever & Always;Fearless
-The Best Day;Fearless
-Change;Fearless
-Mine;Speak Now
-Sparks Fly;Speak Now
-Back to December;Speak Now
-Speak Now;Speak Now
-Dear John;Speak Now
-Mean;Speak Now
-The Story of Us;Speak Now
-Never Grow Up;Speak Now
-Enchanted;Speak Now
-Better Than Revenge;Speak Now
-Innocent;Speak Now
-Haunted;Speak Now
-Last Kiss;Speak Now
-Long Live;Speak Now
-Ours;Speak Now
-If This Was a Movie;Speak Now
-Superman;Speak Now
-State of Grace;Red
-Red;Red
-Treacherous;Red
-I Knew You Were Trouble;Red
-All Too Well;Red
-22;Red
-I Almost Do;Red
-We Are Never Ever Getting Back Together;Red
-The Last Time;Red
-Holy Ground;Red
-Sad Beautiful Tragic;Red
-The Lucky One;Red
-Everything Has Changed;Red
-Starlight;Red
-Begin Again;Red
-The Moment I Knew;Red
-Come Back... Be Here;Red
-Girl at Home;Red
-Welcome to New York;1989
-Blank Space;1989
-Style;1989
-Out of the Woods;1989
-All You Had to Do Was Stay;1989
-Shake It Off;1989
-I Wish You Would;1989
-Bad Blood;1989
-Wildest Dreams;1989
-How You Get the Girl;1989
-This Love;1989
-I Know Places;1989
-Clean;1989
-Wonderland;1989
-You Are in Love;1989
-New Romantics;1989
-…Ready for It?;reputation
-End Game;reputation
-I Did Something Bad;reputation
-Dont Blame Me;reputation
-Delicate;reputation
-Look What You Made Me Do;reputation
-So It Goes…;reputation
-Gorgeous;reputation
-Getaway Car;reputation
-King of My Heart;reputation
-Dancing with Our Hands Tied;reputation
-Dress;reputation
-This Is Why We Cant Have Nice Things;reputation
-Call It What You Want;reputation
-New Years Day;reputation
-I Forgot That You Existed;Lover
-Cruel Summer;Lover
-Lover;Lover
-The Man;Lover
-The Archer;Lover
-I Think He Knows;Lover
-Miss Americana & the Heartbreak Prince;Lover
-Paper Rings;Lover
-Cornelia Street;Lover
-Death by a Thousand Cuts;Lover
-London Boy;Lover
-Soon Youll Get Better;Lover
-False God;Lover
-You Need to Calm Down;Lover
-Afterglow;Lover
-Me!;Lover
-Its Nice to Have a Friend;Lover
-Daylight;Lover
-The 1;folklore
-Cardigan;folklore
-The Last Great American Dynasty;folklore
-Exile;folklore
-My Tears Ricochet;folklore
-Mirrorball;folklore
-Seven;folklore
-August;folklore
-This Is Me Trying;folklore
-Illicit Affairs;folklore
-Invisible String;folklore
-Mad Woman;folklore
-Epiphany;folklore
-Betty;folklore
-Peace;folklore
-Hoax;folklore
+Tim McGraw;Taylor Swift;https://open.spotify.com/embed/track/0Om9WAB5RS09L80DyOfTNa
+Picture to Burn;Taylor Swift;https://open.spotify.com/embed/track/32mVHdy0bi1XKgr0ajsBlG
+Teardrops on My Guitar;Taylor Swift;https://open.spotify.com/embed/track/7zMcNqs55Mxer82bvZFkpg
+A Place in This World;Taylor Swift;https://open.spotify.com/embed/track/73OX8GdpOeGzKC6OvGSbsv
+Cold as You;Taylor Swift;https://open.spotify.com/embed/track/7an1exwMnfYRcdVQm0yDev
+The Outside;Taylor Swift;https://open.spotify.com/embed/track/2QA3IixpRcKyOdG7XDzRgv
+Tied Together with a Smile;Taylor Swift;https://open.spotify.com/embed/track/6K0CJLVXqbGMeJSmJ4ENKK
+Stay Beautiful;Taylor Swift;https://open.spotify.com/embed/track/2ZoOmCSgj0ypVAmGd1ve4y
+Shouldve Said No;Taylor Swift;https://open.spotify.com/embed/track/16MVSD0mGI4RMQT83Qzm69
+Marys Song (Oh My My My);Taylor Swift;https://open.spotify.com/embed/track/2QrQCMel6v2JiLxqrg4p2O
+Our Song;Taylor Swift;https://open.spotify.com/embed/track/15DeqWWQB4dcEWzJg15VrN
+Im Only Me When Im With You;Taylor Swift;https://open.spotify.com/embed/track/0JIdBrXGSJXS72zjF9ss9u
+Invisible;Taylor Swift;https://open.spotify.com/embed/track/5OOd01o2YS1QFwdpVLds3r
+A Perfectly Good Heart;Taylor Swift;https://open.spotify.com/embed/track/1spLfUJxtyVyiKKTegQ2r4
+Jump Then Fall;Fearless;https://open.spotify.com/embed/track/08gavXombT6KR0af88i9tA
+Untouchable;Fearless;https://open.spotify.com/embed/track/2IZ00ed83ygPIiacYScWUE
+Come in with the Rain;Fearless;https://open.spotify.com/embed/track/4pl5zcqCv4vc3cB7M4MZ6f
+SuperStar;Fearless;https://open.spotify.com/embed/track/14Bljc3pOOG0xQX3wqhLN9
+The Other Side of the Door;Fearless;https://open.spotify.com/embed/track/0xvsgzM8AtBtRHZm5rav8A
+Fearless;Fearless;https://open.spotify.com/embed/track/3F6czr26ZwGU5O5CHY04Ma
+Fifteen;Fearless;https://open.spotify.com/embed/track/3M0w3fhdXByHLCNAoi5c9G
+Love Story;Fearless;https://open.spotify.com/embed/track/0kN3oXYWWAk1uC0y2WoyOE
+Hey Stephen;Fearless;https://open.spotify.com/embed/track/6wcFdMmiDscAhZJrcVFumx
+White Horse;Fearless;https://open.spotify.com/embed/track/4jPtq9shRdUv8Zjr0a5xkD
+You Belong with Me;Fearless;https://open.spotify.com/embed/track/3as6Wz3mwbTnusWhZjTUNr
+Breathe;Fearless;https://open.spotify.com/embed/track/6S9G7J3EB1ZY0rrZPwsBg5
+Tell Me Why;Fearless;https://open.spotify.com/embed/track/4XrP7vKBjKLEYlRZdb0Ygr
+Youre Not Sorry;Fearless;https://open.spotify.com/embed/track/6HWYtS215rxaaMjvpyG18W
+The Way I Loved You;Fearless;https://open.spotify.com/embed/track/77VotUUL79U10TAnYdqwvr
+Forever & Always;Fearless;https://open.spotify.com/embed/track/1zxrcAk6eiytfavqriMcKT
+The Best Day;Fearless;https://open.spotify.com/embed/track/5YbZZ2gYfvW1UvHHF4pVaD
+Change;Fearless;https://open.spotify.com/embed/track/0RdcBnAXyH2YZZvcBVu2k6
+Mine;Speak Now;https://open.spotify.com/embed/track/6LZaxlycSWrJZ4Volb25qx
+Sparks Fly;Speak Now;https://open.spotify.com/embed/track/1q8E1FfFuhd12c5JcJwPxQ
+Back to December;Speak Now;https://open.spotify.com/embed/track/7lxADouiWFkwR7ZV2GKUcH
+Speak Now;Speak Now;https://open.spotify.com/embed/track/1nYWTzy5zu3zEPNgB1sItW
+Dear John;Speak Now;https://open.spotify.com/embed/track/1ubvV5ECkm6nSI6g1HmbBK
+Mean;Speak Now;https://open.spotify.com/embed/track/4N60XfcTE1ysLZGbYgnYXq
+The Story of Us;Speak Now;https://open.spotify.com/embed/track/19tHCfzUSoy5HkpxcmbA0A
+Never Grow Up;Speak Now;https://open.spotify.com/embed/track/74WBGgUnpKrJXt6TETfR6Z
+Enchanted;Speak Now;https://open.spotify.com/embed/track/14LtANuaslKWyYbktUrHBU
+Better Than Revenge;Speak Now;https://open.spotify.com/embed/track/1By2VQkUN0Frd8mKNV5NYC
+Innocent;Speak Now;https://open.spotify.com/embed/track/3kfgJql90tzgoxByioAMXR
+Haunted;Speak Now;https://open.spotify.com/embed/track/11UaQaEp2LvdspTyyuE3ur
+Last Kiss;Speak Now;https://open.spotify.com/embed/track/1D27z8xNzjW0Mwwt1NCWhJ
+Long Live;Speak Now;https://open.spotify.com/embed/track/7DjCRhhFo9PPzca1BjMLcf
+Ours;Speak Now;https://open.spotify.com/embed/track/1EQn3Uc5AyUXoiPLeyCrrg
+If This Was a Movie;Speak Now;https://open.spotify.com/embed/track/0vvt4IZOMkRug195S4MUq0
+Superman;Speak Now;https://open.spotify.com/embed/track/2R7C9dDqv1UPycvepBFziA
+State of Grace;Red;https://open.spotify.com/embed/track/5zyCYmiaVE5y26EZuwZbsw
+Red;Red;https://open.spotify.com/embed/track/1RvQQGwaPipiNgz8RXAKA8
+Treacherous;Red;https://open.spotify.com/embed/track/0XfOV7qY3834QpFVwOb6CC
+I Knew You Were Trouble;Red;https://open.spotify.com/embed/track/0ciHz919LVKoH4zgxyMPZ9
+All Too Well;Red;https://open.spotify.com/embed/track/1q3RiD1tIWUpGsNFADMlvl
+22;Red;https://open.spotify.com/embed/track/3bIxTsfeNMO7Nt2J3EUKrA
+I Almost Do;Red;https://open.spotify.com/embed/track/31pEV5lPJi7btskZoUr2yu
+We Are Never Ever Getting Back Together;Red;https://open.spotify.com/embed/track/1OYARuagDrpgNNQ4loO1Cs
+Stay Stay Stay;Red;https://open.spotify.com/embed/track/1x0J8LFX23d5h1zzuzZorc
+The Last Time;Red;https://open.spotify.com/embed/track/7vvIpJZye5cRR6De1LKM0m
+Holy Ground;Red;https://open.spotify.com/embed/track/5d2Kn9oAAh9S2EbyCo1i52
+Sad Beautiful Tragic;Red;https://open.spotify.com/embed/track/5QKhg4r4Ibt0LVTmWEXTEg
+The Lucky One;Red;https://open.spotify.com/embed/track/2wtHlpYSgC7xEdD3DrSHNL
+Everything Has Changed;Red;https://open.spotify.com/embed/track/7gdwoOmi258QJq0hmQ4hto
+Starlight;Red;https://open.spotify.com/embed/track/0vqI4ZIMuifeKeItGiWbPj
+Begin Again;Red;https://open.spotify.com/embed/track/48A0aShHlovDfTMucMrE66
+The Moment I Knew;Red;https://open.spotify.com/embed/track/5AsmAjBSSQjRPWgAYIp8tm
+Come Back... Be Here;Red;https://open.spotify.com/embed/track/4qyalTRMRH5YuEntvvMvq0
+Girl at Home;Red;https://open.spotify.com/embed/track/6cf6rLb8qcklvJv90W6HCW
+Welcome to New York;1989;https://open.spotify.com/embed/track/33Kq0AT5rvwyE4azisG08x
+Blank Space;1989;https://open.spotify.com/embed/track/2sC2P3BN0IXujNaaSyDmtP
+Style;1989;https://open.spotify.com/embed/track/1fo2ctLqj3zBhRQKOXprol
+Out of the Woods;1989;https://open.spotify.com/embed/track/6Nde5KuTXyB7jlPO4upaBo
+All You Had to Do Was Stay;1989;https://open.spotify.com/embed/track/0lmMtDQ2ElasKU2qDAE6NN
+Shake It Off;1989;https://open.spotify.com/embed/track/3fthfkkvy9av3q3uAGVf7U
+I Wish You Would;1989;https://open.spotify.com/embed/track/1B5VzXPqMlvRw0U4HJY3dJ
+Bad Blood;1989;https://open.spotify.com/embed/track/0yN4fNzmVnmgC0dsOoi9Wh
+Wildest Dreams;1989;https://open.spotify.com/embed/track/106R7Z57WYzBAfrXImV30y
+How You Get the Girl;1989;https://open.spotify.com/embed/track/6wfugRLamFsTRbPcCpNnP7
+This Love;1989;https://open.spotify.com/embed/track/1kTPQnabROVkW9bUXdCGrB
+I Know Places;1989;https://open.spotify.com/embed/track/2zfgVd034GlUvk7LqBHl6u
+Clean;1989;https://open.spotify.com/embed/track/4bXCcoesMt8u99xMsbLr9U
+Wonderland;1989;https://open.spotify.com/embed/track/6iWMI5oOhWrDbLbjmwTWFq
+You Are in Love;1989;https://open.spotify.com/embed/track/4A2LfnduSTsE8u0ecYROxE
+New Romantics;1989;https://open.spotify.com/embed/track/6rZVy6FIG7lSJQMFXHo12z
+…Ready for It?;reputation;https://open.spotify.com/embed/track/2yLa0QULdQr0qAIvVwN6B5
+End Game;reputation;https://open.spotify.com/embed/track/2x0WlnmfG39ZuDmstl9xfX
+I Did Something Bad;reputation;https://open.spotify.com/embed/track/4svZDCRz4cJoneBpjpx8DJ
+Dont Blame Me;reputation;https://open.spotify.com/embed/track/1R0a2iXumgCiFb7HEZ7gUE
+Delicate;reputation;https://open.spotify.com/embed/track/6NFyWDv5CjfwuzoCkw47Xf
+Look What You Made Me Do;reputation;https://open.spotify.com/embed/track/1P17dC1amhFzptugyAO7Il
+So It Goes…;reputation;https://open.spotify.com/embed/track/5PxFv9yJEg9dxvbZggykro
+Gorgeous;reputation;https://open.spotify.com/embed/track/1ZY1PqizIl78geGM4xWlEA
+Getaway Car;reputation;https://open.spotify.com/embed/track/0VE4kBnHJUgtMf0dy6DRmW
+King of My Heart;reputation;https://open.spotify.com/embed/track/7HuBDWi18s4aJM8UFnNheH
+Dancing with Our Hands Tied;reputation;https://open.spotify.com/embed/track/7I7JbDv63ZJJsSi24DyJrz
+Dress;reputation;https://open.spotify.com/embed/track/6oVxXO5oQ4pTpO8RSnkzvv
+This Is Why We Cant Have Nice Things;reputation;https://open.spotify.com/embed/track/07NxDD1iKCHbAldceD7QLP
+Call It What You Want;reputation;https://open.spotify.com/embed/track/1GwMQaZz6Au3QLDbjbMdme
+New Years Day;reputation;https://open.spotify.com/embed/track/7F5oktn5YOsR9eR5YsFtqb
+I Forgot That You Existed;Lover;https://open.spotify.com/embed/track/43rA71bccXFGD4C8GOpIlN
+Cruel Summer;Lover;https://open.spotify.com/embed/track/1BxfuPKGuaTgP7aM0Bbdwr
+Lover;Lover;https://open.spotify.com/embed/track/1dGr1c8CrMLDpV6mPbImSI
+The Man;Lover;https://open.spotify.com/embed/track/3RauEVgRgj1IuWdJ9fDs70
+The Archer;Lover;https://open.spotify.com/embed/track/3pHkh7d0lzM2AldUtz2x37
+I Think He Knows;Lover;https://open.spotify.com/embed/track/2YWtcWi3a83pdEg3Gif4Pd
+Miss Americana & the Heartbreak Prince;Lover;https://open.spotify.com/embed/track/214nt20w5wOxJnY462klLw
+Paper Rings;Lover;https://open.spotify.com/embed/track/4y5bvROuBDPr5fuwXbIBZR
+Cornelia Street;Lover;https://open.spotify.com/embed/track/12M5uqx0ZuwkpLp5rJim1a
+Death by a Thousand Cuts;Lover;https://open.spotify.com/embed/track/2dgFqt3w9xIQRjhPtwNk3D
+London Boy;Lover;https://open.spotify.com/embed/track/1LLXZFeAHK9R4xUramtUKw
+Soon Youll Get Better;Lover;https://open.spotify.com/embed/track/4AYtqFyFbX0Xkc2wtcygTr
+False God;Lover;https://open.spotify.com/embed/track/5hQSXkFgbxjZo9uCwd11so
+You Need to Calm Down;Lover;https://open.spotify.com/embed/track/6RRNNciQGZEXnqk8SQ9yv5
+Afterglow;Lover;https://open.spotify.com/embed/track/1SymEzIT3H8UZfibCs3TYi
+Me!;Lover;https://open.spotify.com/embed/track/2Rk4JlNc2TPmZe2af99d45
+Its Nice to Have a Friend;Lover;https://open.spotify.com/embed/track/1SmiQ65iSAbPto6gPFlBYm
+Daylight;Lover;https://open.spotify.com/embed/track/1fzAuUVbzlhZ1lJAx9PtY6
+The 1;folklore;https://open.spotify.com/embed/track/0Jlcvv8IykzHaSmj49uNW8
+Cardigan;folklore;https://open.spotify.com/embed/track/4R2kfaDFhslZEMJqAFNpdd
+The Last Great American Dynasty;folklore;https://open.spotify.com/embed/track/2Eeur20xVqfUoM3Q7EFPFt
+Exile;folklore;https://open.spotify.com/embed/track/4pvb0WLRcMtbPGmtejJJ6y
+My Tears Ricochet;folklore;https://open.spotify.com/embed/track/1MgV7FIyNxIG7WzMRJV5HC
+Mirrorball;folklore;https://open.spotify.com/embed/track/0ZNU020wNYvgW84iljPkPP
+Seven;folklore;https://open.spotify.com/embed/track/6KJqZcs9XDgVck7Lg9QOTC
+August;folklore;https://open.spotify.com/embed/track/3hUxzQpSfdDqwM3ZTFQY0K
+This Is Me Trying;folklore;https://open.spotify.com/embed/track/7kt9e9LFSpN1zQtYEl19o1
+Illicit Affairs;folklore;https://open.spotify.com/embed/track/2NmsngXHeC1GQ9wWrzhOMf
+Invisible String;folklore;https://open.spotify.com/embed/track/6VsvKPJ4xjVNKpI8VVZ3SV
+Mad Woman;folklore;https://open.spotify.com/embed/track/2QDyYdZyhlP2fp79KZX8Bi
+Epiphany;folklore;https://open.spotify.com/embed/track/08fa9LFcFBTcilB3iq2e2A
+Betty;folklore;https://open.spotify.com/embed/track/5kI4eCXXzyuIUXjQra0Cxi
+Peace;folklore;https://open.spotify.com/embed/track/7MbT4I8qGntX4fMdqMQgke
+Hoax;folklore;https://open.spotify.com/embed/track/6MWoRt97mnSTXZhu3ggi9C

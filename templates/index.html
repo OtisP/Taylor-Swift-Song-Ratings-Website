@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Help Rank Taylor Swift Songs</title>
+  <link rel="stylesheet" href="/static/css/main.css">
+
+</head>
+<body>
+  <h1>Otis's Taylor Swift Ranker</h1>
+  <p>Using an ELO system we will be ranking Taylor Swift songs. You'll be prompted with 2 Taylor Swift songs. Select the better song, how confident your are with that decision.</p>
+
+  <table style="width:600px; margin-left: auto; margin-right: auto;">
+    <tr>
+      <td> <img id = "album_one" src="" alt='' onclick="imageClick(0)"> </td>
+      <td> <img id = "album_two" src="" alt='' onclick="imageClick(1)"> </td>
+    </tr>
+    <tr>
+      <td id="song_one"></td>
+      <td id="song_two"></td>
+    </tr>
+    <tr>
+      <td> <iframe src="" id = "song_one_preview" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
+      <td> <iframe src="" id = "song_two_preview" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
+    </tr>
+    <tr>
+      <label for="album_one_picked"> <td> <input type="radio" name="album_picked" value="1"/></td> </label>
+      <label for="album_two_picked"> <td> <input type="radio" name="album_picked" value="2"/></td> </label>
+    </tr>
+  </table>
+
+  <p>Put the slider all the way to the left if you feel not strongly at all about your choice, put the slider all the way to the right if you feel extremely strongly, or put it appropriately in the middle.</p>
+  <div class="range"><input type="range" min="1" max="5" value="3" class="slider" id="myRange" style="margin-left: auto !important; margin-right: auto !important;"></div>
+
+
+  <script type = "text/javascript" src="/static/js/main.js"></script>
+  <div> <button onclick="buttonClicked()">Submit</button> </div>
+
+</body>
+</html>

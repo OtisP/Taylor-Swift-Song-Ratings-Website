@@ -14,14 +14,14 @@ def get_main_page():
     return render_template("index.html")
 
 # (2) This will return a text response
-@app.route('/getsongs')
-def get_search_results():
+@app.route('/getsongs/<artist>')
+def getsongs(artist):
     # Record search
     conn = sqlite3.connect('song_rankings.db')
     cursor = conn.cursor()
     # Get 2 random songs that have shown up the fewest amount of times.
     # There's a +5 to the min, to vary song comparisions a bit
-    sql_command = 'SELECT * FROM songs WHERE num_shown<(SELECT min(num_shown) FROM songs)+5 ORDER BY RANDOM() LIMIT 2;'
+    sql_command = 'SELECT * FROM ' + artist + ' WHERE num_shown<(SELECT min(num_shown) FROM ' + artist + ')+5 ORDER BY RANDOM() LIMIT 2;'
     songs = cursor.execute(sql_command)
 
     returnable_songs = []
@@ -32,12 +32,12 @@ def get_search_results():
     return json.dumps(returnable_songs)
 
 # (3) This will return the database info
-@app.route('/songrankings')
-def get_history():
+@app.route('/songrankings/<artist>')
+def get_history(artist):
     toReturn = ""
     conn = sqlite3.connect('song_rankings.db')
     cursor = conn.cursor()
-    historyData = cursor.execute("select * from songs;")
+    historyData = cursor.execute("select * from " + artist + ";")
 
     toReturn = ""
     for row in historyData:
@@ -48,8 +48,8 @@ def get_history():
     return toReturn
 
 # (4) This will submit the ranking
-@app.route('/submitranking/<winner_info>')
-def submit_ranking(winner_info):
+@app.route('/submitranking/<artist>/<winner_info>')
+def submit_ranking(artist, winner_info):
     #parse the input
     print(winner_info)
     winner_info = winner_info.split(',')
@@ -61,13 +61,13 @@ def submit_ranking(winner_info):
     conn = sqlite3.connect('song_rankings.db')
     cursor = conn.cursor()
 
-    sql_command = 'SELECT elo, num_shown FROM songs WHERE id='+ str(winner_id) +';'
+    sql_command = 'SELECT elo, num_shown FROM ' + artist + ' WHERE id='+ str(winner_id) +';'
     winner_stats = cursor.execute(sql_command)
     for row in winner_stats:
         winner_elo = row[0]
         winner_num_shown = row[1]
 
-    sql_command = 'SELECT elo, num_shown FROM songs WHERE id='+ str(loser_id) +';'
+    sql_command = 'SELECT elo, num_shown FROM ' + artist + ' WHERE id='+ str(loser_id) +';'
     loser_stats = cursor.execute(sql_command)
     for row in loser_stats:
         loser_elo = row[0]
@@ -78,9 +78,9 @@ def submit_ranking(winner_info):
     new_loser_elo = elo.loserFirstsNewElo(loser_elo, winner_elo, kfactor)
 
     #write those new elos into the database, and increment times shows
-    sql_command = 'UPDATE songs SET elo = '+ str(new_winner_elo) +', num_shown = '+ str(winner_num_shown+1) +' WHERE id = '+ str(winner_id) +';'
+    sql_command = 'UPDATE ' + artist + ' SET elo = '+ str(new_winner_elo) +', num_shown = '+ str(winner_num_shown+1) +' WHERE id = '+ str(winner_id) +';'
     cursor.execute(sql_command)
-    sql_command = 'UPDATE songs SET elo = '+ str(new_loser_elo) +', num_shown = '+ str(loser_num_shown+1) +' WHERE id = '+ str(loser_id) +';'
+    sql_command = 'UPDATE ' + artist + ' SET elo = '+ str(new_loser_elo) +', num_shown = '+ str(loser_num_shown+1) +' WHERE id = '+ str(loser_id) +';'
     cursor.execute(sql_command)
     conn.commit()
 

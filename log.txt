@@ -13,3 +13,7 @@ Day 2;08/03/20
 I was on a TEAR last night going off on this website. It turns out frontend is pretty easy to crank out. Added a lot of features. Some include: selectable album cover art, Spotify widget, a slider, the submit button that accurately changes the database, and it's a lot better as a whole now.
 
 It required a decent amount of manual input to get all of the Spotify widgets in. I may be expanding to other artists as well, and if I were to do that I'd have to automate that data collection process. I'd also like to add a viewer that displays the current ranking of all the songs in a pretty way.
+
+Added mouseover-text telling you current ELO of songs. Currently working on making the code more versatile for different artists.
+
+Made the code FAR more general and it will now be much easier to do a different artist. The hard part will be writing a script to get the song lists and album covers. Depending on the artist, I could maybe just manually pull the images if that's to hard, but hopefully not.

@@ -1,13 +1,3 @@
-function imageClick(album_num) {
-  var radios = document.getElementsByName('album_picked');
-  for (var i = 0, length = radios.length; i < length; i++) {
-    if (i == album_num) {
-      radios[i].checked = true
-      break;
-    }
-  }
-}
-
 function getSongs(artist) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
@@ -15,16 +5,8 @@ function getSongs(artist) {
       var songs = JSON.parse(this.responseText);
       console.log(songs)
 
-      // reset the checkboxes
-      var radios = document.getElementsByName('album_picked');
-      for (var i = 0, length = radios.length; i < length; i++) {
-        if (radios[i].checked) {
-          radios[i].checked = false
-          break;
-        }
-      }
       // reset the slider
-      document.getElementById("myRange").value = 3;
+      document.getElementById("myRange").value = 0;
 
       // write in the names of the songs
       document.getElementById("song_one").innerHTML = songs[0][1];
@@ -74,35 +56,29 @@ function buttonClicked() {
   var artist_s = document.getElementById("artist_select");
   var artist = artist_s.options[artist_s.selectedIndex].value;
 
-  var radios = document.getElementsByName('album_picked');
-
-  var winner = -1
-  for (var i = 0, length = radios.length; i < length; i++) {
-    if (radios[i].checked) {
-      winner = radios[i].value;
-      break;
-    }
-  }
-  // if they haven't yet selected something give an error
-  if (winner == -1) {
-    // give user an error message or something
-    return null;
-  }
   var kfactor = document.getElementById("myRange").value;
 
-  if (winner == 1){
-    var winner_id = document.getElementById('song_one').title;
-    var loser_id = document.getElementById('song_two').title;
-  }else if (winner == 2){
-    var winner_id = document.getElementById('song_two').title;
-    var loser_id = document.getElementById('song_one').title;
-  }else{
-    alert("oh no");
+  // If kfactor is 0, then their even, don't change rankings
+  // if kfactor is negative, set winner = 1
+  if (kfactor != 0){
+    if (kfactor < 0){
+      var winner_id = document.getElementById('song_one').title;
+      var loser_id = document.getElementById('song_two').title;
+      // make kfactor positive
+      kfactor = (-1) * kfactor
+
+    }else if (kfactor > 2){
+      var winner_id = document.getElementById('song_two').title;
+      var loser_id = document.getElementById('song_one').title;
+    }else{
+      alert("oh no");
+    }
+
+    var winner_info = [winner_id, loser_id, kfactor];
+    console.log(winner_info)
+    submitRanking(artist, winner_info);
   }
-
-  var winner_info = [winner_id, loser_id, kfactor];
-
-  submitRanking(artist, winner_info);
+  getSongs(artist);
 }
 
 function submitRanking(artist, textData) {

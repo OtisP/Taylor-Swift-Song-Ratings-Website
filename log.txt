@@ -23,3 +23,8 @@ I'm now trying to implement a script to get artists info from Spotify. I think u
 I was able to make a script to easily grab the names of all the songs of an artist. One issue that I had was, with Kanye West, a bunch of his music was re-released as the live version/cover/or just a straight up copy. There's work to be done on minimizing duplicate songs, but for now I'll just go through them manually and take them out.
 
 Getting the URL to the image isn't actually that hard. For now I'm going to stick with downloading the images and saving them locally though.
+
+The next thing that I want to do is make a ranking/leaderboard page for the songs, that accesses the database, maybe that makes/modifies a playlist as well, but we'll see. That will also involve making a sidebar to navigate through pages
+I'd also like to label the parts of a slider, that will make a big difference in the readability of the website.
+
+Got rid of a bunch of code :( because the slider wasn't intuitive at all after running it by some family members. I've changed it to make it a lot more intuitive.

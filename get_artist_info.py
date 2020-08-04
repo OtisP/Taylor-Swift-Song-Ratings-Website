@@ -25,7 +25,7 @@ artist = spotify.artist(artist_id)['name']
 artist_tag = artist.split()[-1].lower()
 
 # create and write into the song_list txt file
-file = open('song_lists/' + artist_tag + '_song_list.txt', 'w+')
+file = open('song_lists/' + artist_tag + '_song_list_new.txt', 'w+')
 for album in albums:
     album_uri = album['uri']
     album_name = album['name']
@@ -47,7 +47,7 @@ for album in albums:
         file.write(line_to_write)
 
     # get and save the link to the album art
-    # TODO: 
+    # TODO:
     # album_art_url = album['images'][0]
     # album_art_name = album_name.replace(" ", "_").lower()
     # art_file = open('static/images/' + artist_tag + '/' + album_art_name + '.txt')

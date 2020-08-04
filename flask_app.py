@@ -87,6 +87,10 @@ def submit_ranking(artist, winner_info):
     conn.close()
     return json.dumps(winner_info)
 
+# (5) This website will list the ranking in a pretty way
+@app.route("/ranking/<artist>")
+def get_ranking_page(artist):
+    pass
 
 if __name__ == '__main__':
     app.run()

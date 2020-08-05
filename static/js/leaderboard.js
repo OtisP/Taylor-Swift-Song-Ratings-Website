@@ -25,12 +25,10 @@ function getRankings(artist) {
           }
         }
       }
-
-     }
+    }
   };
   xhttp.open("GET", "leaderboard/" + artist, true);
   xhttp.send();
-
 }
 window.onload = getRankings("swift");
 

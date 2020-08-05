@@ -4,7 +4,6 @@ import sys
 def writeSongs(filename, database, artist):
     conn = sqlite3.connect('song_rankings.db')
     cursor = conn.cursor()
-
     id = 0
     # for each song add it into the db with elo 1000, and 0 appearances
     with open(filename) as songlist:

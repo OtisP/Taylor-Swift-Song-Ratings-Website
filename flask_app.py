@@ -144,4 +144,4 @@ def get_artists():
     return json.dumps(artist_list)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')

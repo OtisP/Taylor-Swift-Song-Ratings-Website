@@ -2,7 +2,7 @@ import sqlite3
 import sys
 
 # USAGE
-# Run as python3 initialize_db+for_artist.py <artist_tag>
+# Run as python3 initialize_db_for_artist.py <artist_tag>
 # If exists /song_lists/<artist_tag>_song_list.txt then it will work
 
 def writeSongs(filename, database, artist):

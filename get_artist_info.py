@@ -23,8 +23,10 @@ This will also create a folder in the images folder with suffix '_new'
 
 This is just to ensure you don't accidentally write over any files you have
 manually edited and want to keep. Simply delete the suffixes for full
-funcionality with the website
- """
+functionality with the website.
+Run initialize_db_for_artist.py once suffixes are removed.
+See that file for its usage
+"""
 def get_embed_url(track_id):
     return "https://open.spotify.com/embed/track/" + track_id
 

@@ -1,4 +1,10 @@
-table, td {border: 1px solid black;}
+td {border: 1px solid black;}
+table{
+  border: 1px solid black;
+  width:600px;
+  margin-left: auto;
+  margin-right: auto;
+}
 td {text-align: center;}
 body {
   background-color: #c3fffa;
@@ -26,6 +32,20 @@ button {
 img:hover {
   cursor: pointer
 }
+
+#footer {
+  position: relative;
+  min-height: 100%;
+  font-size: small;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  border: 1px solid #eeeeee;
+  border-top: 1px solid #cccccc;
+  border-radius: 5px;
+  background-color: #e1e1e1;
+}
+
 
 
 /* Slider Credit to W3 Custom Slider */
@@ -127,4 +147,24 @@ img:hover {
 
 .select-items div:hover, .same-as-selected {
   background-color: #2d6930;
+}
+
+
+#navbar {
+  border: 2px solid #555555;
+  border-top: 0px;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #ccddee;
+}
+.navitem {
+  border: 1px solid #808080;
+  border-radius: 6px;
+  font-size: 20px;
+  color: #dddddd;
+  padding: 5px;
+  background-color: #666666;
+}
+.navitem:hover {
+  background-color: #aaaaaa;
 }

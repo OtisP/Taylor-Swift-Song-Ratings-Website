@@ -87,10 +87,48 @@ def submit_ranking(artist, winner_info):
     conn.close()
     return json.dumps(winner_info)
 
-# (5) This website will list the ranking in a pretty way
-@app.route("/ranking/<artist>")
-def get_ranking_page(artist):
-    pass
+# (5) This webpage will list the ranking in a pretty way
+@app.route("/leaderboard")
+def get_leaderboard_page():
+    return render_template("leaderboard.html")
+
+# (6) This will return all of the songs/info in order
+@app.route("/leaderboard/<artist>")
+def get_artist_ranking(artist):
+    #build a list of lists, where for each item in the larger list
+    #   item 0 is artwork link
+    #   item 1 is Rank, just incrementing by one for each song
+    #   item 2 is the ELO for the song
+    #   item 3 is the song name
+    song_info = []
+    conn = sqlite3.connect('song_rankings.db')
+    cursor = conn.cursor()
+
+    sql_command = "SELECT album, id, elo, song FROM " + artist + " ORDER BY elo DESC, num_shown DESC, song;"
+
+    leaderboard_song_list = cursor.execute(sql_command)
+
+    rank = 0
+    for row in leaderboard_song_list:
+        song = []
+        # parse the album into the png needed
+        album_name = row[0].lower().replace(" ", "_")
+        song.append("/static/images/" + artist + "/" + album_name + ".png")
+
+        rank += 1
+        song.append(rank)
+
+        # make the ELO a little more readable
+        song.append(round(row[2],2))
+
+        #add in the song name
+        song.append(row[3])
+        song_info.append(song)
+    return json.dumps(song_info)
+
+@app.route("/about")
+def get_about_page():
+    return render_template("about.html")
 
 if __name__ == '__main__':
     app.run()

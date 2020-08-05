@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Help Rank Artist's Songs</title>
+    <meta name="description" content="Taylor Swift song ranking. Kanye West song ranking">
+    <meta name="keywords" content="Taylor, Swift, Kanye, West, Songs, Ranking, Leaderboard">
+    <meta name="author" content="Otis Peterson">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/css/main.css">
+  </head>
+
+  <body>
+    <div class="navbar">
+      <a href="/">Rank Songs</a>
+      <a href="/leaderboard">Leaderboard</a>
+      <a href="/about">About</a>
+    </div>
+
+    <h1>Leaderboard</h1>
+
+    <div class="custom-select" style="width:200px;">
+      <select id = "artist_select">
+        <option value="swift" selected="selected">Taylor Swift</option>
+        <option value="swift">Taylor Swift</option>
+        <option value="west">Kanye West</option>
+        <option value="decemberists">The Decemberists</option>
+      </select>
+    </div>
+
+    <br>
+
+    <table id="ranking_table">
+      <tr>
+        <td>Album Art</td> <td>Rank</td> <td>ELO</td> <td>Song Name</td>
+      </tr>
+    </table>
+
+    <div id="footer">
+      <p>Created by Otis Peterson. All images reserved to Wikipedia. Not for commercial use.</p>
+    </div>
+
+    <script type = "text/javascript" src="/static/js/leaderboard.js"></script>
+
+  </body>
+</html>

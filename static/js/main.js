@@ -67,7 +67,7 @@ function buttonClicked() {
       // make kfactor positive
       kfactor = (-1) * kfactor
 
-    }else if (kfactor > 2){
+    }else if (kfactor > 0){
       var winner_id = document.getElementById('song_two').title;
       var loser_id = document.getElementById('song_one').title;
     }else{
@@ -77,8 +77,9 @@ function buttonClicked() {
     var winner_info = [winner_id, loser_id, kfactor];
     console.log(winner_info)
     submitRanking(artist, winner_info);
+  }else{
+    getSongs(artist);
   }
-  getSongs(artist);
 }
 
 function submitRanking(artist, textData) {
@@ -91,6 +92,14 @@ function submitRanking(artist, textData) {
   };
   xhttp.open("GET", "submitranking/" + artist + "/" + textData, true);
   xhttp.send();
+}
+
+function keyDown(event) {
+  // if the user presses the "Enter" key, submit the ranking
+  var key_value = event.which || event.keyCode;
+  if (key_value == 13) {
+    buttonClicked();
+  }
 }
 
 // All subsequent code Credit to W3 Custom Select Menu

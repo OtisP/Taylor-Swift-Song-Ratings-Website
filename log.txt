@@ -28,3 +28,19 @@ The next thing that I want to do is make a ranking/leaderboard page for the song
 I'd also like to label the parts of a slider, that will make a big difference in the readability of the website.
 
 Got rid of a bunch of code :( because the slider wasn't intuitive at all after running it by some family members. I've changed it to make it a lot more intuitive.
+
+Day 3;08/04/20
+I'd like to start designing the leaderboard page, that will allow the users to see the rankings of the songs for a given artist. This will require getting the songs, ordered first by ELO, secondly by number of times shown, then finally by Name of song. I'll just be using a table, but I'd like to display a small image of the album art on the left side.
+
+I think the structure will be:
+ART|Rank|ELO|SONG NAME
+
+From the little I know of SQL it looks like:
+SELECT album, id, elo, song FROM swift ORDER BY elo DESC, num_shown DESC, song;
+
+should do the trick. I get the album to modify it into the album artwork name. I get the id, so I can write those to be the order
+
+There's some maintainability to do with not copy and pasting the artist selector and the js associated with it over. But as a beginner we'll set that aside for now. The leaderboard page seems to be working pretty nicely.
+
+I'd like to add a sidebar now.
+Okay that's done. I'd like to add an about page, and then I'd feel ready to start using it. There are still some features that could be implemented, but it's fine, especially for the project that it is. I still have no experience/knowledge about how to make the site nicely compatible with mobile. That's tough because when sharing it people are way more likely to open it up on mobile. After implementing the about page I might do that. Making the formatting a little more consistent as well, especially if I'm making this public, seems nice

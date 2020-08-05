@@ -1,58 +1,63 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Help Rank Artist's Songs</title>
-  <meta name="description" content="Taylor Swift song ranking. Kanye West song ranking">
-  <meta name="keywords" content="Taylor, Swift, Kanye, West, Songs, Ranking">
-  <meta name="author" content="Otis Peterson">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>Help Rank Artist's Songs</title>
+    <meta name="description" content="Taylor Swift song ranking. Kanye West song ranking">
+    <meta name="keywords" content="Taylor, Swift, Kanye, West, Songs, Ranking">
+    <meta name="author" content="Otis Peterson">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="/static/css/main.css">
-</head>
+    <link rel="stylesheet" href="/static/css/main.css">
+  </head>
 
-<!-- <div class="sidenav">
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
- -->
+  <body>
 
-<body>
-  <h1>Otis's Artist Song Ranker</h1>
-  <p>Using an ELO system we will be ranking different artists songs. Select the better song of the two songs using the slider.</p>
-  <div class="custom-select" style="width:200px;">
-    <select id = "artist_select">
-      <option value="swift" selected="selected">Taylor Swift</option>
-      <option value="swift">Taylor Swift</option>
-      <option value="west">Kanye West</option>
-      <option value="decemberists">The Decemberists</option>
-    </select>
-  </div>
+    <div class="navbar">
+      <a href="/">Rank Songs</a>
+      <a href="/leaderboard">Leaderboard</a>
+      <a href="/about">About</a>
+    </div>
 
-  <br>
+    <h1>Otis's Artist Song Ranker</h1>
 
-  <table style="width:600px; margin-left: auto; margin-right: auto;">
-    <tr>
-      <td> <img id = "album_one" src="" alt='' width=300 height=300> </td>
-      <td> <img id = "album_two" src="" alt='' width=300 height=300> </td>
-    </tr>
-    <tr>
-      <td id="song_one"></td>
-      <td id="song_two"></td>
-    </tr>
-    <tr>
-      <td> <iframe src="" id = "song_one_preview" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-      <td> <iframe src="" id = "song_two_preview" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-    </tr>
-  </table>
+    <p>Using an ELO system we will be ranking different artists songs. Select the better song of the two songs using the slider.</p>
 
-  <p>Put the slider further to the left to select the left song. <br> Put the slider further to the right to select the right song. <br> The amount left/right that the slider is placed IS recorded. </p>
-  <div><input type="range" min="-5" max="5" value="0" class="slider" id="myRange" style="margin-left: auto !important; margin-right: auto !important;"></div>
+    <div class="custom-select" style="width:200px;">
+      <select id = "artist_select">
+        <option value="swift" selected="selected">Taylor Swift</option>
+        <option value="swift">Taylor Swift</option>
+        <option value="west">Kanye West</option>
+        <option value="decemberists">The Decemberists</option>
+      </select>
+    </div>
+
+    <br>
+
+    <table style="width:600px;">
+      <tr>
+        <td> <img id = "album_one" src="" alt='' width=300 height=300> </td>
+        <td> <img id = "album_two" src="" alt='' width=300 height=300> </td>
+      </tr>
+      <tr>
+        <td id="song_one"></td>
+        <td id="song_two"></td>
+      </tr>
+      <tr>
+        <td> <iframe src="" id = "song_one_preview" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
+        <td> <iframe src="" id = "song_two_preview" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
+      </tr>
+    </table>
+
+    <p>Put the slider further to the left to select the left song. <br> Put the slider further to the right to select the right song. <br> The AMOUNT left/right that the slider is placed IS recorded. </p>
+    <div><input type="range" min="-5" max="5" value="0" class="slider" id="myRange" style="margin-left: auto !important; margin-right: auto !important;"></div>
 
 
-  <script type = "text/javascript" src="/static/js/main.js"></script>
-  <div> <button onclick="buttonClicked()" style="font-size:large;" >Submit</button> </div>
+    <div> <button onclick="buttonClicked()" style="font-size:large;" onkeydown="keyDown(event)">Submit</button> </div>
 
-</body>
+    <div id="footer">
+      <p>Created by Otis Peterson. All images reserved to Wikipedia. Not for commercial use.</p>
+    </div>
+    <script type = "text/javascript" src="/static/js/main.js"></script>
+
+  </body>
 </html>

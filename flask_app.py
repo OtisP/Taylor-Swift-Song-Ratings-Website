@@ -130,5 +130,18 @@ def get_artist_ranking(artist):
 def get_about_page():
     return render_template("about.html")
 
+@app.route("/get_artists")
+def get_artists():
+    conn = sqlite3.connect('song_rankings.db')
+    cursor = conn.cursor()
+    artists = cursor.execute("SELECT * FROM artist_names;")
+
+    artist_list = []
+    for row in artists:
+        artist_list.append(row[0])
+
+    print(artist_list)
+    return json.dumps(artist_list)
+
 if __name__ == '__main__':
     app.run()

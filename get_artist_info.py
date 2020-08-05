@@ -2,6 +2,7 @@
 import sys
 import os
 import time
+import sqlite3
 import spotipy
 import string
 import urllib.request
@@ -27,8 +28,13 @@ functionality with the website.
 Run initialize_db_for_artist.py once suffixes are removed.
 See that file for its usage
 """
-def get_embed_url(track_id):
+def getEmbedUrl(track_id):
     return "https://open.spotify.com/embed/track/" + track_id
+
+def writeArtistName(artist):
+    conn = sqlite3.connect('song_rankings.db')
+    cursor = conn.cursor()
+    artists = cursor.execute("INSERT INTO artist_names (name) VALUES ("+artist+");")
 
 artist_id = sys.argv[1]
 spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())
@@ -40,10 +46,12 @@ while results['next']:
     results = spotify.next(results)
     albums.extend(results['items'])
 
-album_uris = []
-
 # get the artists last name (as artist_tag)
 artist = spotify.artist(artist_id)['name']
+try:
+    writeArtistName(artist)
+except:
+    print("Wasn't able to add artist name --" + artist + "-- please add manually")
 artist_tag = artist.split()[-1].lower()
 
 #make the song_lists directory if none exist
@@ -77,7 +85,7 @@ for album in albums:
             break
         else:
             songs_added.add(track_name)
-        embed_url = get_embed_url(track['id'])
+        embed_url = getEmbedUrl(track['id'])
         line_to_write += track_name + ";" + album_name + ";" + embed_url + "\n"
         file.write(line_to_write)
 

@@ -16,7 +16,7 @@ It required a decent amount of manual input to get all of the Spotify widgets in
 
 Added mouseover-text telling you current ELO of songs. Currently working on making the code more versatile for different artists.
 
-Made the code FAR more general and it will now be much easier to do a different artist. The hard part will be writing a script to get the song lists and album covers. Depending on the artist, I could maybe just manually pull the images if that's to hard, but hopefully not.
+Made the code FAR more general and it will now be much easier to do a different artist. The hard part will be writing a script to get the song lists and album covers. Depending on the artist, I could maybe just manually pull the images, but hopefully not.
 
 I'm now trying to implement a script to get artists info from Spotify. I think using the spotipy module is the best way to do this, after a little research.
 
@@ -60,3 +60,5 @@ Regex helped me through it:
 It was sloppy, but oh my GOD the Beatles have like a hundred of remasters of all of their songs I swear. Also, even with my work I may have over-pruned/under-pruned some areas. It's not a science, just trying to get the most popular artist of all time onto the list.
 
 A note about the album art downloader: it definitely downloads too many album covers. But as it goes.
+
+Day 4;08/05/20

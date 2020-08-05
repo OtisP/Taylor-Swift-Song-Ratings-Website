@@ -1,6 +1,10 @@
 import sqlite3
 import sys
 
+# USAGE
+# Run as python3 initialize_db+for_artist.py <artist_tag>
+# If exists /song_lists/<artist_tag>_song_list.txt then it will work
+
 def writeSongs(filename, database, artist):
     conn = sqlite3.connect('song_rankings.db')
     cursor = conn.cursor()
@@ -24,6 +28,10 @@ artist = sys.argv[1]
 
 database = "song_rankings.db"
 songlist = "song_lists/" + artist + "_song_list.txt"
+
+#this will throw an error if the file doesn't exist
+file = open(songlist)
+file.close()
 conn = sqlite3.connect(database)
 cursor = conn.cursor()
 sql_command = "CREATE TABLE " + artist + " (id int, song varchar(255), album varchar(255), elo int, link varchar(255), num_shown int);"

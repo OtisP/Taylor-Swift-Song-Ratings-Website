@@ -43,4 +43,12 @@ should do the trick. I get the album to modify it into the album artwork name. I
 There's some maintainability to do with not copy and pasting the artist selector and the js associated with it over. But as a beginner we'll set that aside for now. The leaderboard page seems to be working pretty nicely.
 
 I'd like to add a sidebar now.
-Okay that's done. I'd like to add an about page, and then I'd feel ready to start using it. There are still some features that could be implemented, but it's fine, especially for the project that it is. I still have no experience/knowledge about how to make the site nicely compatible with mobile. That's tough because when sharing it people are way more likely to open it up on mobile. After implementing the about page I might do that. Making the formatting a little more consistent as well, especially if I'm making this public, seems nice
+Okay that's done. I'd like to add an about page, and then I'd feel ready to start using it. There are still some features that could be implemented, but it's fine, especially for the project that it is. I still have no experience/knowledge about how to make the site nicely compatible with mobile. That's tough because when sharing it people are way more likely to open it up on mobile. After implementing the about page I might do that. Making the formatting a little more consistent as well, especially if I'm making this public, seems nice.
+
+The sidebar ended up as a navbar at the top of the page, but I'm alright with that, it looks better I think. I want to add support for The Decemberists, hopefully pulling this information will take a lot less time than the other two, now that I've written scripts for it.
+
+NOTE: I should really make the dropdown bar just get which tables are in the database, or somehow dynamically change based on the artists actually available.
+
+The script to get artist info is good, and I made it not add duplicates, but there's no way I can automate finding all of the "Home Demo" and "Cover" versions of songs. I could try implementing some heuristics, but this feels good enough.
+
+Added full functionality to get cover art, and it feels GOOD. Fixed a minor but in leaderboard website as well.

@@ -2,13 +2,12 @@ function getRankings(artist) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if(this.readyState == 4 && this.status == 200) {
-      song_info = JSON.parse(this.responseText)
-      console.log(song_info)
+      song_info = JSON.parse(this.responseText);
       var tableRef = document.getElementById('ranking_table');
 
+      // write all the new song info into the table
       for (var i = 0; i < song_info.length; i++) {
         song = song_info[i];
-        console.log(song);
         var newRow  = tableRef.insertRow(i+1);
         for (var j = 0; j < song.length; j++) {
           var newCell = newRow.insertCell(j);
@@ -16,8 +15,8 @@ function getRankings(artist) {
             // If it's the image
             var img = document.createElement("img");
             img.src = song[j];
-            img.width = "100"
-            img.height = "100"
+            img.width = "100";
+            img.height = "100";
             newCell.appendChild(img);
           }else {
             var newText  = document.createTextNode(song[j]);
@@ -31,6 +30,17 @@ function getRankings(artist) {
   xhttp.send();
 }
 window.onload = getRankings("swift");
+
+function getNewRankings(artist){
+  var tableRef = document.getElementById('ranking_table');
+  var table_len = document.getElementById("ranking_table").rows.length;
+
+  // delete all rows except for base row
+  for (var i = table_len-1; i > 0; i--) {
+    tableRef.deleteRow(i);
+  }
+  getRankings(artist);
+}
 
 // All subsequent code Credit to W3 Custom Select Menu
 var x, i, j, l, ll, selElmnt, a, b, c;
@@ -69,7 +79,7 @@ for (i = 0; i < l; i++) {
             // call getSongs on active artist
             var artist_s = document.getElementById("artist_select");
             var artist = artist_s.options[artist_s.selectedIndex].value;
-            getRankings(artist);
+            getNewRankings(artist);
 
             yl = y.length;
             for (k = 0; k < yl; k++) {
@@ -103,7 +113,7 @@ function closeAllSelect(elmnt) {
   yl = y.length;
   for (i = 0; i < yl; i++) {
     if (elmnt == y[i]) {
-      arrNo.push(i)
+      arrNo.push(i);
     } else {
       y[i].classList.remove("select-arrow-active");
     }

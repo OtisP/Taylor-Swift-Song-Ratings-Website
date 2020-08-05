@@ -3,7 +3,7 @@ function getSongs(artist) {
   xhttp.onreadystatechange = function() {
     if(this.readyState == 4 && this.status == 200) {
       var songs = JSON.parse(this.responseText);
-      console.log(songs)
+      console.log(songs);
 
       // reset the slider
       document.getElementById("myRange").value = 0;
@@ -35,8 +35,8 @@ function getSongs(artist) {
       var song_two_elo = songs[1][3];
       var alt_one = "Current ELO: " + song_one_elo;
       var alt_two = "Current ELO: " + song_two_elo;
-      console.log(alt_one)
-      console.log(alt_two)
+      console.log(alt_one);
+      console.log(alt_two);
       document.getElementById('album_one').title = alt_one;
       document.getElementById('album_two').title = alt_two;
 
@@ -65,7 +65,7 @@ function buttonClicked() {
       var winner_id = document.getElementById('song_one').title;
       var loser_id = document.getElementById('song_two').title;
       // make kfactor positive
-      kfactor = (-1) * kfactor
+      kfactor = (-1) * kfactor;
 
     }else if (kfactor > 0){
       var winner_id = document.getElementById('song_two').title;
@@ -75,7 +75,7 @@ function buttonClicked() {
     }
 
     var winner_info = [winner_id, loser_id, kfactor];
-    console.log(winner_info)
+    console.log(winner_info);
     submitRanking(artist, winner_info);
   }else{
     getSongs(artist);
@@ -86,8 +86,8 @@ function submitRanking(artist, textData) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if(this.readyState == 4 && this.status == 200) {
-      console.log("Database updated")
-      getSongs(artist)
+      console.log("Database updated");
+      getSongs(artist);
      }
   };
   xhttp.open("GET", "submitranking/" + artist + "/" + textData, true);
@@ -173,7 +173,7 @@ function closeAllSelect(elmnt) {
   yl = y.length;
   for (i = 0; i < yl; i++) {
     if (elmnt == y[i]) {
-      arrNo.push(i)
+      arrNo.push(i);
     } else {
       y[i].classList.remove("select-arrow-active");
     }

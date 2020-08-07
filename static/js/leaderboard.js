@@ -50,7 +50,6 @@ function getArtists() {
       var select = document.getElementById("artist_select");
       for (var i = 0; i < artists.length; i++) {
         artist = artists[i];
-        console.log(artist);
         artist_tag = artist.split(" ");
         artist_tag = artist_tag[artist_tag.length-1].toLowerCase();
         var option = document.createElement("option");

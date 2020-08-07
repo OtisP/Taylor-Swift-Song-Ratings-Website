@@ -34,7 +34,7 @@ def getEmbedUrl(track_id):
 def writeArtistName(artist):
     conn = sqlite3.connect('song_rankings.db')
     cursor = conn.cursor()
-    artists = cursor.execute("INSERT INTO artist_names (name) VALUES ("+artist+");")
+    artists = cursor.execute("INSERT INTO artist_names (name) VALUES (\'"+artist+"\');")
 
 artist_id = sys.argv[1]
 spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials())

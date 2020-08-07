@@ -29,8 +29,14 @@ button {
   width: 600px;
   height: 50px;
 }
-img:hover {
-  cursor: pointer
+
+.sidebar {
+   width: 80px;
+   height: 100px;
+   position: fixed;
+   right: 100px;
+   top: 100px;
+   border: 1px solid black;
 }
 
 #footer {

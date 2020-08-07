@@ -3,7 +3,6 @@ function getSongs(artist) {
   xhttp.onreadystatechange = function() {
     if(this.readyState == 4 && this.status == 200) {
       var songs = JSON.parse(this.responseText);
-      console.log(songs);
 
       // reset the slider
       document.getElementById("myRange").value = 0;
@@ -22,8 +21,6 @@ function getSongs(artist) {
       album_name_one = decodeURI(album_name_one).toLowerCase().split(" ").join("_");
 
       album_name_two = decodeURI(album_name_two).toLowerCase().split(" ").join("_");
-      console.log(album_name_one);
-      console.log(album_name_two);
 
       album_one_source = "/static/images/" + artist + "/" + album_name_one + ".png";
       album_two_source = "/static/images/" + artist + "/" + album_name_two + ".png";
@@ -35,8 +32,6 @@ function getSongs(artist) {
       var song_two_elo = songs[1][3];
       var alt_one = "Current ELO: " + song_one_elo;
       var alt_two = "Current ELO: " + song_two_elo;
-      console.log(alt_one);
-      console.log(alt_two);
       document.getElementById('album_one').title = alt_one;
       document.getElementById('album_two').title = alt_two;
 
@@ -75,7 +70,6 @@ function buttonClicked() {
     }
 
     var winner_info = [winner_id, loser_id, kfactor];
-    console.log(winner_info);
     submitRanking(artist, winner_info);
   }else{
     getSongs(artist);
@@ -111,7 +105,6 @@ function getArtists() {
       var select = document.getElementById("artist_select");
       for (var i = 0; i < artists.length; i++) {
         artist = artists[i];
-        console.log(artist);
         artist_tag = artist.split(" ");
         artist_tag = artist_tag[artist_tag.length-1].toLowerCase();
         var option = document.createElement("option");

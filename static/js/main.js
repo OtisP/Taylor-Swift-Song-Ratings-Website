@@ -40,12 +40,14 @@ function getSongs(artist) {
       document.getElementById('song_one_preview').src = song_one_link;
       document.getElementById('song_two_preview').src = song_two_link;
 
+      getNumSubmissions();
      }
   };
   xhttp.open("GET", "getsongs/" + artist, true);
   xhttp.send();
 }
 window.onload = getSongs("swift");
+window.onload = getNumSubmissions();
 
 function buttonClicked() {
   var artist_s = document.getElementById("artist_select");
@@ -94,6 +96,21 @@ function keyDown(event) {
   if (key_value == 13) {
     buttonClicked();
   }
+}
+
+function getNumSubmissions() {
+  var artist_s = document.getElementById("artist_select");
+  var artist_tag = artist_s.options[artist_s.selectedIndex].value;
+  
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if(this.readyState == 4 && this.status == 200) {
+      var sub_total_ref = document.getElementById("submission_total");
+      sub_total_ref.innerHTML = "Total number of ratings submitted for this artist is: <br>" + JSON.parse(this.responseText);
+     }
+  };
+  xhttp.open("GET", "get_num_submissions/" + artist_tag, true);
+  xhttp.send();
 }
 
 function getArtists() {
@@ -159,8 +176,8 @@ function loadSelector(){
 
               // call getSongs on active artist
               var artist_s = document.getElementById("artist_select");
-              var artist = artist_s.options[artist_s.selectedIndex].value;
-              getSongs(artist);
+              var artist_tag = artist_s.options[artist_s.selectedIndex].value;
+              getSongs(artist_tag);
 
               yl = y.length;
               for (k = 0; k < yl; k++) {

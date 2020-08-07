@@ -29,6 +29,14 @@ button {
   width: 600px;
   height: 50px;
 }
+#submission_total{
+  border-style: solid;
+  border-width: : 5px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border-radius: 3px;
+  width: 400px;
+}
 
 .sidebar {
    width: 80px;

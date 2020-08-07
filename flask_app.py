@@ -107,6 +107,7 @@ def get_artist_ranking(artist):
     sql_command = "SELECT album, id, elo, song FROM " + artist + " ORDER BY elo DESC, num_shown DESC, song;"
 
     leaderboard_song_list = cursor.execute(sql_command)
+    conn.close()
 
     rank = 0
     for row in leaderboard_song_list:
@@ -140,7 +141,20 @@ def get_artists():
     for row in artists:
         artist_list.append(row[0])
 
+    conn.close()
     return json.dumps(artist_list)
+
+@app.route("/get_num_submissions/<artist_tag>")
+def get_num_submissions(artist_tag):
+    conn = sqlite3.connect('song_rankings.db')
+    cursor = conn.cursor()
+    rows = cursor.execute("SELECT SUM(num_shown) FROM " + artist_tag + ";")
+    for row in rows:
+        num_shown_total = row[0]
+    conn.close()
+
+    num_submissions = int(num_shown_total)//2
+    return str(num_submissions)
 
 if __name__ == '__main__':
     app.run()

@@ -65,4 +65,6 @@ Day 4;08/05/20
 Did some stuff, tried to put it online, didn't work. Want to add a counter to one side, kind of gamify it, so you want to make more and more comparisons.
 
 Day 5;08/06/20
-Made the site live at otis.pythonanywhere.com.
+Made the site live at otis.pythonanywhere.com. Added BROCKHAMPTON. Minor bug fixes. Want to add a counter of ratings submitted, should just be able to get the total number of times shown, and then divide by 2.
+
+Added the div that shows the number of ratings submitted for the artist.

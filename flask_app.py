@@ -20,8 +20,8 @@ def getsongs(artist):
     conn = sqlite3.connect('song_rankings.db')
     cursor = conn.cursor()
     # Get 2 random songs that have shown up the fewest amount of times.
-    # There's a +1 to the min, to vary song comparisions a bit
-    sql_command = 'SELECT * FROM ' + artist + ' WHERE num_shown<(SELECT min(num_shown) FROM ' + artist + ')+1 ORDER BY RANDOM() LIMIT 2;'
+    # There's a +2 to the min, to vary song comparisions a bit
+    sql_command = 'SELECT * FROM ' + artist + ' WHERE num_shown<(SELECT min(num_shown) FROM ' + artist + ')+2 ORDER BY RANDOM() LIMIT 2;'
     songs = cursor.execute(sql_command)
 
     returnable_songs = []
@@ -107,7 +107,6 @@ def get_artist_ranking(artist):
     sql_command = "SELECT album, id, elo, song FROM " + artist + " ORDER BY elo DESC, num_shown DESC, song;"
 
     leaderboard_song_list = cursor.execute(sql_command)
-    conn.close()
 
     rank = 0
     for row in leaderboard_song_list:
@@ -125,6 +124,8 @@ def get_artist_ranking(artist):
         #add in the song name
         song.append(row[3])
         song_info.append(song)
+
+    conn.close()
     return json.dumps(song_info)
 
 @app.route("/about")
